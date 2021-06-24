@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Arsha --||-- login page</title>
+    <!-- Favicon of this page -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <!-- Apple touch device -->
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="stylesheet" href="css/icofont.min.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/login.min.css">
+</head>
+<body>
+    <section id="field-wrapper">
+        <div class="container">
+            <div style="text-align: center;">
+                <h3>Sign up to get our service</h3>
+            </div>
+            <div class="shadow">
+                <form action="contact.php" method="POST">
+                    <div class="wrapper">
+                        <div class="input-group">
+                            <i class="icofont-user"></i>
+                            <input type="text" name="name" placeholder="Name" class="form-control one">
+                            <div class="gdg">hello</div>
+                        </div>
+                    
+                        <div class="input-group">
+                            <i class="icofont-envelope"></i>
+                            <input type="email" name="email" placeholder="Email" class="form-control two">
+                        </div>
+
+                        <div class="input-group">
+                            <i class="icofont-ui-password"></i>
+                            <input type="password" name="password" placeholder="Password" class="form-control three">
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn">sing in <i class="icofont-sign-in"></i></button>
+                    </div>
+                </form>
+                <div class="social-icon">
+                    <ul>
+                        <li><a href=""><i class="icofont-facebook"></i></a></li>
+                        <li><a href=""><i class="icofont-github"></i></a></li>
+                        <li><a href=""><i class="icofont-envelope"></i></a></li>
+                        <li><a href=""><i class="icofont-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const target_1 = document.querySelector('.one');
+        const target_2 = document.querySelector('.two');
+        const target_3 = document.querySelector('.three');
+        const sub_btn = document.querySelector('.btn');
+        const password = document.querySelector('.password');
+        sub_btn.onclick = (e) => {
+            if (target_1.value === '' || target_2.value === '' || target_3.value === '') {
+                alert('Please Fill Out The Box');
+                e.preventDefault()
+            } else {
+                alert('Thank You!')
+            };
+        }
+    </script>
+
+</body>
+</html> 
